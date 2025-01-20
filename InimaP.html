@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Particles</title>
+  <link href='//fonts.googleapis.com/css?family=Anaheim' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="styleP.css"> <!-- Link to the CSS file -->
+  <script type="text/javascript" src="//rawgithub.com/ottis/canvas-particles/master/js/particle.js"></script>
+  <script type="text/javascript" src="//rawgithub.com/ottis/canvas-particles/master/js/particle_system.js"></script>
+</head>
+
+<body>
+<canvas id="container"></canvas>
+
+<label for="cod-acces"></label><input type="text" id="cod-acces" placeholder="Introduceți codul" class="transparent-input">
+
+<script type="text/javascript">
+  var system = new particleSystem({"canvas_id": "container", height: 500});
+  system.start();
+
+  document.getElementById("cod-acces").addEventListener("input", function() {
+    var cod = this.value;
+    if (cod === "Te iubesc") {
+      window.location.href = "flori.html";
+    }
+  });
+</script>
+</body>
+</html>

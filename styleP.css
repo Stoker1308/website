@@ -1,0 +1,38 @@
+/* CSS Implementation */
+
+body {
+    margin: 0;
+    background: #1d1d1d; /* Background color */
+    font: 14px / 1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif; /* Font settings */
+    color: #777; /* Font color */
+    overflow: hidden;
+    height: 100vh; /* Full viewport height */
+    display: flex; /* Flexbox for centering */
+    flex-direction: column; /* Arrange children vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Align items to the top */
+}
+
+canvas {
+    display: block; /* Removes default inline-block spacing */
+    margin: 0 auto; /* Center the canvas */
+    width: 100%; /* Full width */
+    height: 400px; /* Fixed height for the canvas */
+}
+
+.input-container {
+    margin-top: 20px; /* Space between canvas and input */
+}
+
+.transparent-input {
+    padding: 10px;
+    border: 1px solid #999; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    background: rgba(255, 255, 255, 0.2); /* Transparent background */
+    color: white; /* Text color */
+    width: 200px; /* Input width */
+}
+
+.transparent-input::placeholder {
+    color: #ccc; /* Placeholder text color */
+}

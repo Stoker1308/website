@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valentine Day Card</title>
+  <link href="Scrisoare.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<link href='https://fonts.googleapis.com/css?family=Solitreo' rel='stylesheet'>
+<div id="id-button" class="container">
+  <div  class="envelope"></div>
+  <div class="card">
+    <h1 class="message" style="text-align: center;">Ghici Ghicitoare<br>
+      Ce cuvinte simple, dar puternice,<br>
+      Pot topi orice gheață și aprinde suflete?<br>
+      Rostite, pot să înflorească cele mai frumoase petale<br>
+    </h1>
+    <div  class="heart"  onclick="window.location.href='InimaP.html'"></div>
+  </div>
+  <div class="cover"></div>
+  <div class="lid"></div>
+  <div class="shadow"></div>
+</div>
+</body>
+
+<script>
+  document.getElementById("id-button").addEventListener('click', function () {
+    console.log('apas');
+    window.location.href = 'InimaP.html';
+  });
+
+</script>
+</html>
